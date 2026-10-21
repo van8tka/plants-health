@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Народные рецепты</title>
+  <meta name="description" content="Каталог рецептов народной медицины: поиск по болезням, растениям и составу.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 29C16 17 8 11 3 10c0 9 5 15 13 19zm0 0c0-12 8-18 13-19 0 9-5 15-13 19zm0 0V9' fill='%234f7a3a' stroke='%234f7a3a' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#app">К содержимому</a>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="#/">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29C16 17 8 11 3 10c0 9 5 15 13 19zm0 0c0-12 8-18 13-19 0 9-5 15-13 19zm0 0V9"/></svg>
+        <span>Народные рецепты</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#/" data-nav="">Поиск</a>
+        <a href="#/d" data-nav="d">Болезни</a>
+        <a href="#/p" data-nav="p">Растения</a>
+        <a href="#/n" data-nav="n">Не растения</a>
+        <a href="#/s" data-nav="s">Разделы</a>
+        <a href="#/add" data-nav="add" class="nav-add">+ Добавить</a>
+      </nav>
+    </div>
+  </header>
+  <main id="app" class="wrap" tabindex="-1"></main>
+  <footer class="foot wrap">
+    <p>Рецепты народной медицины собраны для справки и не заменяют консультацию врача. Перед применением, особенно ядовитых и сильнодействующих растений, посоветуйтесь со специалистом.</p>
+    <p><a href="#/help">Как добавить или изменить рецепт</a> · <span id="footInfo"></span></p>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="config.js"></script>
+  <script src="data/catalog.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
